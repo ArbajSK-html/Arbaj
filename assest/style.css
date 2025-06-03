@@ -1,0 +1,223 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* background-color: #333; 
+    brown*/
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.com-gap{
+    padding: 100px 0;
+}
+:root{
+    --dark-blue:#038cfc;
+    --til-blue:#1c324f;
+    --alice-blue:#bccce1;
+    --red-blue:#0f64db;
+    --brown:#3c529a;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    background-color: var(--alice-blue);
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid var(--red-blue);
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--til-blue);
+}
+h1{
+    font-size: 72px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: var(--brown);
+}
+h2{
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: var(--brown);
+}
+
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ;
+}
+
+.logo a p{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--brown);
+}
+.menu{
+    display: none;
+}
+.menu a p{
+    font-size: 36px;
+    color: var(--brown);
+}
+.nav-list{
+    z-index: 100;
+}
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    gap: 20px;
+}
+.list-item li a{
+    color: var(--dark-blue);
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+
+/* banner */
+.banner-contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner-left figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    min-width: 270px;
+}
+.banner-right p{
+    padding: 30px 0;
+    font-size: 24px;
+}
+
+/* education */
+.edu-contain-head{
+    display: block; 
+    text-align: center;
+    color: var(--dark-blue);
+    font-size: 48px;
+    text-transform: uppercase;
+    border-bottom:5px solid black ;
+    margin-bottom: 10px;
+}
+.education-contain{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 0 15px;
+    gap: 20px;
+    color: var(--til-blue);
+}
+.edu-head, .exp-head{
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    border-bottom: 2px solid var(--red-blue);
+    text-align: center;
+}
+
+.cardE{
+    background-color: var(--alice-blue);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.about-contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-links{
+    width: 100%;
+}
+
+.about-contain input{
+    padding: 10px 40px;
+    background-color: var(--alice-blue);
+}
+.about-form{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+}
+#message{
+    padding: 40px 40px;
+}
+
+.last-section{
+    background-color: var(--til-blue);
+    text-align: center;
+}
+.last-section p{
+    color: var(--alice-blue);
+}
+.ipad-links a i{
+    color: var(--brown);
+    font-size: 150px;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+    .banner-contain{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu{
+        display: block;
+    }
+    .nav-list{
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 0%;
+    }
+    .list-item{
+        flex-direction: column;
+        align-items: start;
+        border: 2px solid var(--dark-blue);
+    }
+    .list-item li{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 576px) {
+    h1{
+    font-size: 48px;
+    }
+    h2{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 320px) {
+    h1{
+    font-size: 36px;
+    }
+    h2{
+        font-size: 22px
+    }
+}
